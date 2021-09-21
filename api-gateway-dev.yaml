@@ -1,0 +1,16 @@
+
+## PATHS
+
+zuul.routes.invoice.service-id=ms-invoice
+zuul.routes.invoice.path=/api/invoice/**
+zuul.routes.invoice.url=http://localhost:8084/
+
+zuul.routes.pay.service-id=ms-pay
+zuul.routes.pay.path=/api/pay/**
+zuul.routes.pay.url=http://localhost:8085/
+
+zuul.routes.transaction.service-id=ms-transaction
+zuul.routes.transaction.path=/api/invoice/**
+zuul.routes.transaction.url=http://localhost:8086/
+
+zuul.routes.security.sensitive-headers=Cookie,Set-Cookie
